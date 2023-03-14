@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a,
+button,
+li {
+  all: unset; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  width: calc(100% - 0rem);
+  background-color: red;
+  color: #262626;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header p {
+    padding: 1rem; }
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #7f7f7f;
+  padding: 0 2rem;
+  color: #fff;
+  font-size: 2rem;
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  nav .nav__element {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.2rem;
+    cursor: pointer; }
+    nav .nav__element:hover, nav .nav__element:focus, nav .nav__element:focus-within {
+      background-color: #262626; }
+      nav .nav__element:hover ul, nav .nav__element:focus ul, nav .nav__element:focus-within ul {
+        display: grid; }
+  nav div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative; }
+    nav div ul {
+      position: absolute;
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      justify-items: stretch;
+      top: 100%;
+      background-color: #f5f5f5;
+      color: #58a7dd;
+      font-size: 1.6rem;
+      display: none; }
+      nav div ul li {
+        padding: 0.5rem 1rem; }
+        nav div ul li:hover {
+          background-color: #e7e7e7; }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main--2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="video-container">
+      <video autoplay loop muted plays-inline>
+        <source src="Background--1.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <section>
+      <h3>Create Gmail Account</h3>
+      <form action="#" method="get">
+        <input type="text" name="fullName" placeholder="Full Name" required />
+        <input
+          type="number"
+          name="phNumber"
+          placeholder="Phone No."
+          required
+          min="6000000000"
+          max="9999999999"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email id"
+          required
+        />
+        <div class="btn-container">
+          <input type="submit" value="Submit" class="btn" />
+          <input type="reset" value="Reset" class="btn" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

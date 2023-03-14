@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+input {
+  all: unset; }
+
+body {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; }
+
+.video-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -5;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  @media (min-aspect-ratio: 16 / 9) {
+    .video-container video {
+      height: auto;
+      width: 100%; } }
+  @media (max-aspect-ratio: 16 / 9) {
+    .video-container video {
+      height: 100%;
+      width: auto; } }
+
+section {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  gap: 3rem;
+  font-size: 2rem;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  padding: 4rem; }
+  section form {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    gap: 2rem; }
+    section form input {
+      background-color: #fff;
+      width: 30rem;
+      height: 3rem;
+      padding: 0.5rem; }
+      section form input:focus {
+        background-color: rgba(70, 131, 180, 0.35); }
+        section form input:focus::placeholder {
+          color: #ffffff41; }
+    section form .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem; }
+      section form .btn-container .btn {
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        font-size: 1.6rem;
+        border-radius: 0.5rem;
+        background-color: #b100f6;
+        color: #fff; }
+        section form .btn-container .btn:focus, section form .btn-container .btn:hover {
+          background-color: #c32aff; }

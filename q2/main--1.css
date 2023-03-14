@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 10rem;
+}
+
+section {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 20rem;
+  height: 30rem;
+  background-color: #fff7ec;
+}
+section .container__bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+section .container__bars .container__bar {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+section .container__bars .container__bar .bar__value {
+  font-size: 20px;
+  font-weight: 500;
+}
+section .container__bars .container__bar .bar {
+  height: 20rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #fff;
+}
+section .container__bars .container__bar .bar .bar__fill {
+  width: 3rem;
+  background-color: #1d1d1d;
+}
+section .container__bars .container__bar .bar .bar__fill--1 {
+  animation: grow--1 5s ease-in forwards;
+}
+section .container__bars .container__bar .bar .bar__fill--2 {
+  animation: grow--2 5s ease-in forwards;
+}
+section .container__bars .container__bar .bar .bar__fill--3 {
+  animation: grow--3 5s ease-in forwards;
+}
+
+@keyframes grow--1 {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 30%;
+  }
+}
+
+@keyframes grow--2 {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 40%;
+  }
+}
+
+@keyframes grow--3 {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 80%;
+  }
+}
